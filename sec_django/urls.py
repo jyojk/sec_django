@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url, include
+from sec_api.resources import NoteResource
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('sec_api/', include(note_resource.urls))
 ]

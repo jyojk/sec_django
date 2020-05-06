@@ -16,3 +16,5 @@ class Note(models.Model):
 #so it’s not super necessary, but good to be aware of). And now we will expand our __str__ to also include the body
 def __str__(self):
     return '%s %s' % (self.title, self.body)
+
+#Then we ran makemigrations and migrate which will set up database
